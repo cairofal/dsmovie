@@ -27,11 +27,11 @@ function Listing() {
         .then(response => {
             const data = response.data as MoviePage;
             setPage(data);
-        })
+        });
     }, [pageNumber]);
 
-    const handlePageChange = (newPAgeNumber : number) => {
-        setPageNumber(newPAgeNumber);
+    const handlePageChange = (newPageNumber : number) => {
+        setPageNumber(newPageNumber);
     }
 
     return (
